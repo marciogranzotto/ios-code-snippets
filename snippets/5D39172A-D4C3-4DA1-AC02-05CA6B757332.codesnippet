@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>vcinit</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>import UIKit
+
+class &lt;#ViewController class name #&gt;: BaseViewController, IdentifiableNib {
+
+    // MARK: IBOutlets
+
+
+    // MARK: Variables
+
+override var screenName: String {
+    return AnalyticsScreenNames.&lt;#Analytics Screen Name#&gt;
+}
+
+var viewModel: &lt;#ViewModel class name#&gt;?
+
+    // MARK: Static
+
+    static func setupViewController() -&gt; &lt;#ViewController class name #&gt; {
+        let viewModel = &lt;#ViewModel class name#&gt;()
+        let view = UIStoryboard.loadViewController() as &lt;#ViewController class name #&gt;
+
+        view.viewModel = viewModel
+        view.baseViewModel = viewModel
+
+        return view
+    }
+
+    // MARK: Life Cycle
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5D39172A-D4C3-4DA1-AC02-05CA6B757332</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Bond's app v2 ViewController initialization code</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>ViewController Initialization</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
